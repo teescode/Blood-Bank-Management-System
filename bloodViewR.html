@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blood</title>
+</head>
+<body>
+    <header class="text-red-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <img src="https://svgsilh.com/svg/156063-f44336.svg" alt="blood drop" width="50" height="200">
+            <span class="ml-3 text-xl">Blood Bank</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900" href="reciDash.html">Recipient DashBoard</a>
+            <a class="mr-5 hover:text-gray-900" href="bdcDashR.html">Blood Donation Camps</a>
+          </nav>
+          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" onclick="location.href='index.html'">Exit
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+    </header>    
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Blood Stock🩸</h1>
+          </div>
+          <div class="lg:w-2/3 w-full mx-auto overflow-auto">
+            <table class="table-auto w-full text-left whitespace-no-wrap">
+              <thead>
+                <tr>
+                  <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">B_ID</th>
+                  <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Donor_ID</th>
+                  <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Blood Group</th>
+                  <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Donation Date</th>
+                  <th class="w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tr rounded-br">Test Status</th>
+                  <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Recipient_ID</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">1001</td>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">D1</td>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">A+</td>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">2020-08-11</td>
+                  <td class="border-t-2 border-gray-200 w-10 text-center">
+                    <input name="status" type="checkbox">
+                  </td>
+                  <td class="px-4 py-3">R3</td>
+
+                </tr>
+                <tr>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">1002</td>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">D2</td>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">O-</td>
+                  <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">2020-08-11</td>
+                  <td class="border-t-2 border-gray-200 w-10 text-center">
+                    <input name="status" type="checkbox">
+                  </td>
+                  <td class="px-4 py-3">R2</td>
+
+                </tr>
+                <tr>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">1003</td>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">D3</td>
+                  <td class="border-t-2 border-gray-200 px-4 py-3">AB-</td>
+                  <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">2020-08-11</td>
+                  <td class="border-t-2 border-gray-200 w-10 text-center">
+                    <input name="status" type="checkbox">
+                  </td>
+                  <td class="px-4 py-3">R1</td>
+
+                </tr>
+                <tr>
+                  <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">1004</td>
+                  <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">D4</td>
+                  <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">O+</td>
+                  <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">2020-08-11</td>
+                  <td class="border-t-2 border-b-2 border-gray-200 w-10 text-center">
+                    <input name="status" type="checkbox">
+                  </td>
+                  <td class="px-4 py-3">R4</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="flex pl-4 mt-4 lg:w-2/3 w-full mx-auto " style="display: inline-flex;" >
+            
+            <button class="flex ml-auto text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg ">Edit</button>
+            <button class="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded" onclick="location.href='reciDash.html'">Go Back</button>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="bg-gray-100">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Blood Bank —
+            </p>
+            <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">Save lives, one drop at a time.</span>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
